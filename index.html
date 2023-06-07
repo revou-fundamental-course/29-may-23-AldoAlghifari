@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="javascript" href="script.js" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">RevoU</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Our Headquarter</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#messageus">Message Us</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>
+          Hi, Aldo. Welcome to website <br />Ini adalah portofolio website saya
+        </h1>
+        <img src="gambar.png" alt="gambar" />
+      </main>
+    </section>
+
+    <hr />
+
+    <section class="about" id="about">
+      <h2>Our Headquarter</h2>
+
+      <div class="profile">
+        <div class="circle">Jakarta</div>
+        <div class="circle">Bandung</div>
+        <div class="circle">Surabaya</div>
+      </div>
+    </section>
+
+    <section class="messageus" id="messageus">
+      <h2>Message Us</h2>
+
+      <form class="message-form" id="messageForm">
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input type="text" id="nameInput" /></td>
+          </tr>
+          <tr>
+            <td>Tanggal lahir</td>
+            <td>:</td>
+            <td><input type="date" id="birthDateInput" /></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+              <select id="genderSelect">
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Pesan</td>
+            <td>:</td>
+            <td>
+              <textarea
+                id="messageInput"
+                name="message"
+                rows="3"
+                cols="5"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="5">
+              <input type="button" value="Submit" onclick="submitForm()" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div class="content">
+        <input
+          type="text"
+          id="hasil"
+          width="200px"
+          height="200px"
+          placeholder="Hasil" />
+      </div>
+    </section>
+
+    <hr />
+
+    <footer>
+      <div class="content">
+        <p>Created by Aldo</p>
+      </div>
+    </footer>
+
+    <script src="RevoU/script.js"></script>
+  </body>
 </html>
